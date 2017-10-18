@@ -186,7 +186,6 @@ Actions.propTypes = {
 }
 
 export default Box
-
 export const Modal = {
     Box,
     Header,
