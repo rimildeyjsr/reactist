@@ -1,7 +1,7 @@
 const path = require('path')
 
 module.exports = {
-    styleguideDir: 'styleguide/static',
+    styleguideDir: 'docs/',
     sections: [
         {
             name: 'Reactist',
