@@ -8,7 +8,9 @@
     "build-watch": "npm run build -- --watch",
     "check": "./node_modules/.bin/eslint src --ext .js --ext .jsx",
     "test": "./node_modules/.bin/jest",
-    "test-watch": "npm run test -- --watch --coverage"
+    "test-watch": "npm run test -- --watch --coverage",
+    "styleguide": "./node_modules/.bin/styleguidist server",
+    "build-styleguide": "./node_modules/.bin/styleguidist build"
   },
   "repository": "git+https://github.com/Doist/reactist.git",
   "author": "Henning Muszynski <henning@doist.com> (http://doist.com)",
@@ -41,6 +43,7 @@
     "path": "^0.12.7",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
+    "react-styleguidist": "^6.0.31",
     "react-svg-loader": "^1.1.1",
     "react-test-renderer": "^15.5.4",
     "react-tooltip": "^3.3.0",
