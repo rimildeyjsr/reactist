@@ -2,7 +2,7 @@
 
 ```jsx
 const ReactDOM = require('react-dom')
-const Modal = require('../src/components/Modal').Modal
+const Modal = require('../../src/components/Modal').Modal
 
 class ModalExamplePage extends React.Component {
 
