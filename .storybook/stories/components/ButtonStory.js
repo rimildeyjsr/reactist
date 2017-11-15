@@ -1,8 +1,8 @@
 import './styles/button_story.less'
 
-import React from 'react';
-import { storiesOf } from '@storybook/react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import React from 'react'
+import { storiesOf } from '@storybook/react'
+import { withKnobs, text, boolean } from '@storybook/addon-knobs'
 
 import { getPropTypesStory, optionsSourceOnly, optionsNoSourceNoProps } from '../utils/StoryUtils'
 
@@ -82,7 +82,7 @@ const AlternaterBrandingButtonsChapter = {
 }
 
 const ButtonPlaygroundStory = () => (
-    <section className='story'>
+    <section className='story playground'>
         <Button
             name={ text('Name', 'Button Text') }
             secondary={ boolean('Secondary', false) }
