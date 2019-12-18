@@ -1,0 +1,15 @@
+.reactist.link_button {
+  text-decoration: none;
+}
+.reactist.link_button:active {
+  color: #3F82EF;
+}
+.reactist.link_button:visited {
+  color: #3F82EF;
+}
+.reactist.link_button.disabled {
+  color: #808080;
+}
+
+
+/*# sourceMappingURL=LinkButton.map*/

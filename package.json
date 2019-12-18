@@ -51,6 +51,7 @@
         "jest": "^23.6.0",
         "less": "^3.8.1",
         "less-loader": "^4.1.0",
+        "mini-css-extract-plugin": "^0.8.2",
         "moment": "^2.18.1",
         "moment-timezone": "^0.5.13",
         "path": "^0.12.7",

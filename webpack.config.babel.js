@@ -1,6 +1,7 @@
 const path = require('path')
 const webpack = require('webpack')
 const getComponentsMap = require('./scripts/buildHelpers').getComponentsMap
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 
 const BASE_CONFIG = {
     entry: './src/index.js',
@@ -32,7 +33,7 @@ const BASE_CONFIG = {
             {
                 test: /\.less$/,
                 use: [
-                    { loader: 'style-loader' },
+                    { loader: MiniCssExtractPlugin.loader },
                     { loader: 'css-loader' },
                     { loader: 'less-loader' }
                 ]
@@ -65,6 +66,13 @@ const BASE_CONFIG = {
         'prop-types': 'prop-types'
     },
     plugins: [
+        new MiniCssExtractPlugin({
+            // Options similar to the same options in webpackOptions.output
+            // all options are optional
+            filename: '[name].css',
+            chunkFilename: '[id].css',
+            ignoreOrder: false // Enable to remove warnings about conflicting order
+        }),
         new webpack.DefinePlugin({
             'process.env': {
                 NODE_ENV: JSON.stringify('production')
